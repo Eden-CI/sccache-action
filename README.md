@@ -16,7 +16,7 @@ Just copy and paste the following in your GitHub action:
 
 ```
 - name: Run sccache-cache
-  uses: mozilla-actions/sccache-action@v0.0.9
+  uses: Eden-CI/sccache-action@v0.0.1
 ```
 
 ### Conditionally run cache and enable it
@@ -24,7 +24,7 @@ Just copy and paste the following in your GitHub action:
 ```
 - name: Run sccache-cache only on non-release runs
   if: github.event_name != 'release' && github.event_name != 'workflow_dispatch'
-  uses: mozilla-actions/sccache-action@v0.0.9
+  uses: Eden-CI/sccache-action@v0.0.1
 - name: Set Rust caching env vars only on non-release runs
   if: github.event_name != 'release' && github.event_name != 'workflow_dispatch'
   run: |
@@ -38,7 +38,7 @@ Versions prior to sccache v0.10.0 probably will not work.
 
 ```
 - name: Run sccache-cache
-  uses: mozilla-actions/sccache-action@v0.0.9
+  uses: Eden-CI/sccache-action@v0.0.1
   with:
     version: "v0.10.0"
 ```
@@ -58,7 +58,7 @@ Note that using the previous declaration will automatically create a
 
 ```
 - name: Run sccache-cache
-  uses: mozilla-actions/sccache-action
+  uses: Eden-CI/sccache-action@v0.0.1
   with:
     disable_annotations: true
 ```
@@ -103,7 +103,7 @@ When using the action on GitHub Enterprise Server installations a valid GitHub.c
 
 ```
 - name: Run sccache-cache
-  uses: mozilla-actions/sccache-action@v0.0.9
+  uses: Eden-CI/sccache-action@v0.0.1
   with:
     token: ${{ secrets.MY_GITHUB_TOKEN }}
 ```

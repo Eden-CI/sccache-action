@@ -1,6 +1,6 @@
 {
   "name": "sccache-action",
-  "version": "0.0.9",
+  "version": "v0.0.1",
   "description": "Github Action for Sccache",
   "main": "dist/setup/index.js",
   "engines": {
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mozilla-actions/sccache-action.git"
+    "url": "git+https://github.com/Eden-CI/sccache-action.git"
   },
   "keywords": [
     "sccache"
@@ -24,9 +24,9 @@
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/mozilla-actions/sccache-action/issues"
+    "url": "https://github.com/Eden-CI/sccache-action/issues"
   },
-  "homepage": "https://github.com/mozilla-actions/sccache-action#readme",
+  "homepage": "https://github.com/Eden-CI/sccache-action#readme",
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
